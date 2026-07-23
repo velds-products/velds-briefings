@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Briefing Embalagem — Robô Aspirador Velds V50 PRO</title>
+<meta name="description" content="Briefing completo de embalagem giftbox para o Robô Aspirador Inteligente Velds V50 PRO — conceito visual, faces, specs, copy e dados legais.">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #0F172A;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+  padding: 40px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page {
+  background: #fff;
+  width: 794px;
+  box-shadow: 0 8px 40px rgba(0,0,0,.5);
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+/* PAGE HEADER */
+.ph { background: #0C1628; padding: 16px 32px; display: flex; justify-content: space-between; align-items: center; }
+.ph-brand { font-size: 15px; font-weight: 800; letter-spacing: .14em; color: #fff; }
+.ph-label { font-size: 9px; letter-spacing: .2em; text-transform: uppercase; color: #475569; margin-top: 2px; }
+.ph-meta { text-align: right; font-size: 10px; color: #475569; line-height: 1.7; }
+.ph-meta strong { display: block; color: #94A3B8; font-size: 10px; }
+
+/* ACCENT STRIP */
+.accent-strip { height: 3px; background: linear-gradient(90deg, #3B6FE0, #7C3AED); }
+
+/* INTRO BAND */
+.intro-band { background: #0F1F3D; padding: 24px 32px; }
+.intro-band-label { font-size: 10px; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; color: #3B6FE0; margin-bottom: 6px; }
+.intro-band-name { font-size: 26px; font-weight: 900; color: #F1F5F9; line-height: 1.1; text-wrap: balance; }
+.intro-band-tagline { font-size: 12px; color: #94A3B8; margin-top: 8px; font-style: italic; }
+.intro-band-chips { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
+.ichip { font-size: 9px; font-weight: 700; letter-spacing: .06em; background: rgba(59,111,224,.15); color: #93C5FD; border: 1px solid rgba(59,111,224,.3); border-radius: 20px; padding: 3px 10px; }
+.ichip-warn { background: rgba(245,158,11,.12); color: #FCD34D; border-color: rgba(245,158,11,.3); }
+
+/* BODY */
+.body { padding: 24px 32px; display: flex; flex-direction: column; gap: 24px; }
+
+/* SECTION TITLE */
+.sec-title { font-size: 8px; font-weight: 800; letter-spacing: .22em; text-transform: uppercase; color: #3B6FE0; padding-bottom: 8px; border-bottom: 1px solid #E2E8F0; margin-bottom: 14px; }
+
+/* CARD */
+.card { border: 1px solid #E2E8F0; border-radius: 8px; overflow: hidden; }
+.card-header { background: #F8FAFC; padding: 10px 16px; border-bottom: 1px solid #E2E8F0; font-size: 10px; font-weight: 700; color: #334155; letter-spacing: .06em; text-transform: uppercase; }
+.card-body { padding: 14px 16px; }
+
+/* FACES GRID */
+.faces-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.face-card { border: 1px solid #E2E8F0; border-radius: 6px; overflow: hidden; }
+.face-label { background: #1D4ED8; color: #fff; font-size: 9px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; padding: 6px 12px; }
+.face-label-dark { background: #0C1628; }
+.face-label.verso { background: #312E81; }
+.face-label.lateral-b { background: #4338CA; }
+.face-label.aba { background: #6D28D9; }
+.face-content { padding: 10px 12px; font-size: 10px; color: #334155; line-height: 1.7; }
+.face-content ul { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+.face-content ul li::before { content: '› '; color: #3B6FE0; font-weight: 700; }
+
+/* VTABLE */
+.vtable-wrap { overflow-x: auto; }
+.vtable { width: 100%; border-collapse: collapse; font-size: 10.5px; font-variant-numeric: tabular-nums; }
+.vtable th { background: #EFF6FF; color: #1D4ED8; font-size: 9px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 8px 12px; text-align: left; border-bottom: 2px solid #BFDBFE; }
+.vtable td { padding: 8px 12px; color: #334155; border-bottom: 1px solid #F1F5F9; vertical-align: top; }
+.vtable tr:last-child td { border-bottom: none; }
+.vtable .val { font-weight: 700; color: #0F172A; }
+.vtable .pending { color: #B45309; font-weight: 600; font-style: italic; }
+.vtable .lbl { color: #64748B; font-size: 9.5px; font-weight: 600; white-space: nowrap; }
+.vtable tr:nth-child(even) td { background: #F8FAFC; }
+
+/* COPY BLOCK */
+.copy-block { font-size: 10.5px; color: #334155; line-height: 1.75; }
+.copy-feature { display: flex; flex-direction: column; gap: 8px; }
+.copy-item { padding: 9px 12px; border-radius: 5px; border: 1px solid #E2E8F0; background: #F8FAFC; font-size: 10.5px; color: #334155; line-height: 1.6; }
+.copy-item strong { display: block; font-size: 9px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: #1D4ED8; margin-bottom: 3px; }
+
+/* CHECKLIST */
+.checklist { display: flex; flex-direction: column; gap: 6px; }
+.citem { display: flex; align-items: flex-start; gap: 10px; font-size: 10.5px; color: #334155; line-height: 1.5; padding: 7px 10px; background: #F8FAFC; border-radius: 5px; border: 1px solid #F1F5F9; }
+.citem-check { width: 16px; height: 16px; border-radius: 3px; border: 2px solid #3B6FE0; flex-shrink: 0; margin-top: 1px; background: transparent; display: flex; align-items: center; justify-content: center; }
+.citem-check.ok { background: #EFF6FF; border-color: #3B6FE0; }
+.citem-check.ok::after { content: '✓'; font-size: 10px; color: #3B6FE0; font-weight: 900; line-height: 1; }
+.citem-check.pend { border-color: #F59E0B; background: #FFFBEB; }
+.citem .citem-tag { display: inline-block; font-size: 8px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; background: rgba(245,158,11,.12); color: #B45309; border: 1px solid rgba(245,158,11,.3); border-radius: 10px; padding: 1px 7px; margin-left: 6px; vertical-align: middle; }
+.citem .citem-ok { display: inline-block; font-size: 8px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; background: rgba(16,185,129,.1); color: #059669; border: 1px solid rgba(16,185,129,.3); border-radius: 10px; padding: 1px 7px; margin-left: 6px; vertical-align: middle; }
+
+/* NOTE BOX */
+.note-box { background: #FFFBEB; border-left: 4px solid #F59E0B; border-radius: 4px; padding: 12px 16px; font-size: 10.5px; color: #78350F; line-height: 1.65; }
+.note-box strong { display: block; font-size: 9px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: #B45309; margin-bottom: 6px; }
+.note-box ul { list-style: none; display: flex; flex-direction: column; gap: 5px; padding-left: 2px; }
+.note-box ul li { display: flex; gap: 8px; }
+.note-box ul li::before { content: '•'; color: #F59E0B; flex-shrink: 0; }
+
+/* TWO COL */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+/* BOX CONTENTS */
+.box-contents { display: flex; flex-direction: column; gap: 5px; }
+.box-item { display: flex; align-items: center; gap: 10px; font-size: 10.5px; color: #334155; padding: 5px 0; border-bottom: 1px solid #F1F5F9; }
+.box-item:last-child { border-bottom: none; }
+.box-qty { flex-shrink: 0; font-size: 9px; font-weight: 800; background: #EFF6FF; color: #1D4ED8; border: 1px solid #BFDBFE; border-radius: 4px; padding: 2px 7px; font-variant-numeric: tabular-nums; min-width: 28px; text-align: center; }
+
+/* LEGAIS GRID */
+.legais-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+.legais-item { padding: 8px 12px; border-bottom: 1px solid #F1F5F9; font-size: 10px; color: #334155; line-height: 1.55; }
+.legais-item:nth-child(odd) { border-right: 1px solid #F1F5F9; }
+.legais-item dt { font-size: 8.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #94A3B8; margin-bottom: 2px; }
+.legais-item dd { color: #0F172A; }
+
+/* SECTION */
+.section { display: flex; flex-direction: column; }
+
+/* FOOTER */
+.footer { background: #0C1628; padding: 12px 32px; display: flex; justify-content: space-between; align-items: center; }
+.footer span { font-size: 9px; color: #475569; letter-spacing: .06em; }
+
+/* LATERAL B SPLIT */
+.lat-b-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 8px; }
+.lat-b-sub { font-size: 9px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #64748B; margin-bottom: 6px; }
+
+/* VERSO HIGHLIGHTS */
+.verso-cards { display: flex; flex-direction: column; gap: 8px; }
+.verso-highlight { border: 1px solid #E2E8F0; border-radius: 6px; padding: 10px 14px; background: #F8FAFC; display: flex; gap: 12px; align-items: flex-start; }
+.verso-num { flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%; background: #1D4ED8; color: #fff; font-size: 11px; font-weight: 900; display: flex; align-items: center; justify-content: center; margin-top: 1px; }
+.verso-text { flex: 1; }
+.verso-text strong { display: block; font-size: 10px; font-weight: 800; color: #0F172A; margin-bottom: 3px; }
+.verso-text p { font-size: 10px; color: #475569; line-height: 1.6; }
+
+/* FEATURE CARDS LATERAL A */
+.lat-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; }
+.lat-card { border: 1px solid #BFDBFE; border-radius: 6px; padding: 10px 12px; background: #EFF6FF; }
+.lat-card-title { font-size: 9px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: #1D4ED8; margin-bottom: 4px; }
+.lat-card-body { font-size: 10px; color: #334155; line-height: 1.55; }
+
+/* DESCRITIVO BLOCO */
+.descritivo { background: #F0F9FF; border: 1px solid #BAE6FD; border-radius: 6px; padding: 12px 14px; font-size: 10.5px; color: #0C4A6E; line-height: 1.7; margin-bottom: 10px; }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- PAGE HEADER -->
+  <div class="ph">
+    <div>
+      <div class="ph-brand">VELDS</div>
+      <div class="ph-label">Briefing · Embalagem Individual (Gift Box)</div>
+    </div>
+    <div class="ph-meta">
+      <strong>Ref. Interna / BRIEFING-GB-V50PRO · Rev. 01</strong>
+      Produto / V50 PRO &nbsp;|&nbsp; Categoria / Conforto e Convivência<br>
+      Data / Jan 2026
+    </div>
+  </div>
+
+  <div class="accent-strip"></div>
+
+  <!-- INTRO BAND -->
+  <div class="intro-band">
+    <div class="intro-band-label">Robô Aspirador · Velds V50 PRO</div>
+    <div class="intro-band-name">Robô Aspirador Inteligente Velds V50 PRO</div>
+    <div class="intro-band-tagline">"Sua casa limpa por semanas. Você livre todos os dias."</div>
+    <div class="intro-band-chips">
+      <span class="ichip">GIFT BOX</span>
+      <span class="ichip">ROBÔ ASPIRADOR</span>
+      <span class="ichip">MOP DUPLA ROTAÇÃO</span>
+      <span class="ichip">10.000 Pa</span>
+      <span class="ichip">BIVOLT</span>
+      <span class="ichip-warn">INMETRO</span>
+    </div>
+  </div>
+
+  <!-- BODY -->
+  <div class="body">
+
+    <!-- SECTION 1: PAINÉIS DA EMBALAGEM -->
+    <div class="section">
+      <div class="sec-title">Painéis da Embalagem — Mapeamento de Faces</div>
+      <div class="faces-grid">
+
+        <!-- FRENTE -->
+        <div class="face-card">
+          <div class="face-label">Frente (Principal)</div>
+          <div class="face-content">
+            <ul>
+              <li>Logo Velds (posição superior esquerda)</li>
+              <li>Nome: <strong>Robô Aspirador Inteligente V50 PRO</strong></li>
+              <li>Foto hero: robô V50 PRO com estação de carregamento</li>
+              <li>Tagline: <em>"Sua casa limpa por semanas. Você livre todos os dias."</em></li>
+              <li>Ícones de destaque: Mapeamento Laser · 10.000 Pa · Mop Dupla Rotação</li>
+              <li>Espaço reservado para etiqueta do produto <span style="font-size:9px;background:rgba(245,158,11,.12);color:#B45309;border:1px solid rgba(245,158,11,.3);border-radius:10px;padding:1px 6px;font-weight:700;letter-spacing:.04em;">APLICADA NA FÁBRICA</span></li>
+              <li>Espaço para etiqueta de aviso de risco inflamável <span style="font-size:9px;background:rgba(245,158,11,.12);color:#B45309;border:1px solid rgba(245,158,11,.3);border-radius:10px;padding:1px 6px;font-weight:700;letter-spacing:.04em;">A CONFIRMAR</span></li>
+              <li>Selo do INMETRO <span style="font-size:9px;background:rgba(245,158,11,.12);color:#B45309;border:1px solid rgba(245,158,11,.3);border-radius:10px;padding:1px 6px;font-weight:700;letter-spacing:.04em;">EM ANDAMENTO</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- LATERAL A -->
+        <div class="face-card">
+          <div class="face-label lateral-b">Lateral A — Lifestyle + Features</div>
+          <div class="face-content">
+            <div class="descritivo">
+              O Robô Aspirador Inteligente Velds V50 PRO eleva a limpeza da sua casa a outro nível. Com 10.000 Pa de potência, mapeamento a laser LDS e mop de dupla rotação, ele aspira, varre e esfrega o piso em um único ciclo — deixando sua casa impecável enquanto você cuida do que realmente importa.
+            </div>
+            <div class="lat-cards">
+              <div class="lat-card">
+                <div class="lat-card-title">Mapeamento Laser LDS</div>
+                <div class="lat-card-body">Navegação precisa e mapeamento inteligente de toda a casa.</div>
+              </div>
+              <div class="lat-card">
+                <div class="lat-card-title">Mop de Dupla Rotação</div>
+                <div class="lat-card-body">Dois mops giratórios que esfregam o piso com muito mais eficiência.</div>
+              </div>
+              <div class="lat-card">
+                <div class="lat-card-title">10.000 Pa de Potência</div>
+                <div class="lat-card-body">Aspiração profunda em pisos e tapetes, com reforço automático em carpetes.</div>
+              </div>
+              <div class="lat-card">
+                <div class="lat-card-title">Controle por Aplicativo</div>
+                <div class="lat-card-body">Personalize áreas, crie zonas restritas e agende limpezas pelo app.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LATERAL B -->
+        <div class="face-card">
+          <div class="face-label aba">Lateral B — Specs + Conteúdo + QR</div>
+          <div class="face-content">
+            <ul>
+              <li>Especificações técnicas resumidas (tabela compacta)</li>
+              <li>Conteúdo da embalagem (lista completa)</li>
+              <li>QR Code — app Velds / página do produto <span style="font-size:9px;background:rgba(245,158,11,.12);color:#B45309;border:1px solid rgba(245,158,11,.3);border-radius:10px;padding:1px 6px;font-weight:700;letter-spacing:.04em;">GERAR QR</span></li>
+              <li>Logos App Store e Google Play</li>
+              <li>URL de suporte: <strong>velds.com.br/suporte</strong></li>
+              <li>País de origem: China · Prazo de validade: Indeterminado</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- VERSO -->
+        <div class="face-card">
+          <div class="face-label verso">Verso — 3 Destaques Principais</div>
+          <div class="face-content">
+            <div class="verso-cards">
+              <div class="verso-highlight">
+                <div class="verso-num">1</div>
+                <div class="verso-text">
+                  <strong>Mop de Dupla Rotação</strong>
+                  <p>Dois discos giratórios que esfregam o piso com pressão uniforme, removendo manchas com muito mais eficiência. <em>(foto grande — mop em ação)</em></p>
+                </div>
+              </div>
+              <div class="verso-highlight">
+                <div class="verso-num">2</div>
+                <div class="verso-text">
+                  <strong>10.000 Pa de Potência</strong>
+                  <p>Limpeza profunda em qualquer superfície, do piso liso ao tapete.</p>
+                </div>
+              </div>
+              <div class="verso-highlight">
+                <div class="verso-num">3</div>
+                <div class="verso-text">
+                  <strong>Área Restrita Virtual</strong>
+                  <p>Defina no app exatamente onde o robô pode e não pode entrar.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ABA/BASE -->
+        <div class="face-card" style="grid-column: 1 / -1;">
+          <div class="face-label aba">Aba / Base</div>
+          <div class="face-content">
+            <div class="two-col">
+              <div>
+                <div class="lat-b-sub">Conteúdo da Embalagem</div>
+                <ul>
+                  <li>1x Aspirador de Pós Robô V50 PRO</li>
+                  <li>1x Estação de Carregamento</li>
+                  <li>2x Esponja de Filtro</li>
+                  <li>1x Vassoura Principal (escova central)</li>
+                  <li>2x Filtro</li>
+                  <li>4x Escova Lateral</li>
+                  <li>2x Sacos para Poeira</li>
+                  <li>4x Pano de Esfregão Lavável</li>
+                  <li>1x Escova de Limpeza de Filtro</li>
+                </ul>
+              </div>
+              <div>
+                <div class="lat-b-sub">Bloco Legal</div>
+                <ul>
+                  <li>Importado por: Velds Casa Inteligente LTDA</li>
+                  <li>CNPJ: 54.007.750/0001-14</li>
+                  <li>Endereço: R. José Neoli Cruz, 5000, Lote 33, Quadra A — Cond ABC Business Park — Porto Belo/SC — CEP 88210-000</li>
+                  <li>Origem: China · Prazo de validade: Indeterminado</li>
+                  <li>Composição: Plástico, metal e componentes eletrônicos</li>
+                  <li>EAN: 7908856800733 (GTIN-13) — código de barras</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SECTION 2: ESPECIFICAÇÕES TÉCNICAS -->
+    <div class="section">
+      <div class="sec-title">Especificações Técnicas</div>
+      <div class="vtable-wrap card">
+        <table class="vtable">
+          <thead>
+            <tr>
+              <th style="width:38%;">Especificação</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="lbl">Bateria</td>
+              <td class="val">3.200 mAh Li-ion</td>
+            </tr>
+            <tr>
+              <td class="lbl">Conexão / Pareamento</td>
+              <td class="val">Wi-Fi 2.4 GHz / Bluetooth Low Energy</td>
+            </tr>
+            <tr>
+              <td class="lbl">Tempo de Carregamento</td>
+              <td class="val">4 a 5 horas</td>
+            </tr>
+            <tr>
+              <td class="lbl">Alimentação</td>
+              <td class="val">AC 110 ou 240 V, 50/60 Hz &nbsp;/&nbsp; DC 19 V — 600 mA</td>
+            </tr>
+            <tr>
+              <td class="lbl">Força de Sucção</td>
+              <td class="val">10.000 Pa</td>
+            </tr>
+            <tr>
+              <td class="lbl">Níveis de Sucção</td>
+              <td class="val">Silencioso / Normal / Forte / Máximo</td>
+            </tr>
+            <tr>
+              <td class="lbl">Navegação</td>
+              <td class="val">Laser LDS com mapeamento SLAM</td>
+            </tr>
+            <tr>
+              <td class="lbl">Sensores de Obstáculos</td>
+              <td class="val">Antiqueda / Infravermelho anticolisão / Detecção de tapetes e carpetes</td>
+            </tr>
+            <tr>
+              <td class="lbl">Escovas e Mop</td>
+              <td class="val">1 escova central / 2 escovas laterais / 2 mops com dupla rotação</td>
+            </tr>
+            <tr>
+              <td class="lbl">Escalada</td>
+              <td class="val">Até 2 cm</td>
+            </tr>
+            <tr>
+              <td class="lbl">Peso</td>
+              <td class="val">6 kg</td>
+            </tr>
+            <tr>
+              <td class="lbl">Dimensões do Robô</td>
+              <td class="val">350 × 350 × 103 mm</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- SECTION 3: COPY / TEXTOS DA EMBALAGEM -->
+    <div class="section">
+      <div class="sec-title">Copy — Textos da Embalagem</div>
+      <div class="copy-feature">
+
+        <div class="copy-item">
+          <strong>Mapeamento Laser LDS</strong>
+          Mapeamento preciso, cômodo por cômodo.
+        </div>
+
+        <div class="copy-item">
+          <strong>Mapa da Sua Casa</strong>
+          Visualize e edite o mapa da sua casa pelo aplicativo.
+        </div>
+
+        <div class="copy-item">
+          <strong>Personalizar Áreas de Limpeza</strong>
+          Defina exatamente onde o robô deve limpar.
+        </div>
+
+        <div class="copy-item">
+          <strong>Área Restrita Virtual</strong>
+          Crie zonas proibidas no app, sem barreiras físicas.
+        </div>
+
+        <div class="copy-item">
+          <strong>Mop de Dupla Rotação</strong>
+          Dois discos que giram e esfregam o piso com pressão uniforme, removendo sujeira com muito mais eficiência.
+        </div>
+
+        <div class="copy-item">
+          <strong>10.000 Pa de Potência</strong>
+          Limpeza profunda em pisos e tapetes com máxima sucção.
+        </div>
+
+        <div class="copy-item">
+          <strong>Sensores Antiqueda e Anticolisão</strong>
+          Navegação segura, protegendo seu robô e seus móveis.
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SECTION 4: CONTEÚDO DA EMBALAGEM -->
+    <div class="section">
+      <div class="sec-title">Conteúdo da Embalagem</div>
+      <div class="card">
+        <div class="card-header">Itens Inclusos</div>
+        <div class="card-body">
+          <div class="box-contents">
+            <div class="box-item"><span class="box-qty">1×</span> Aspirador de Pós Robô V50 PRO</div>
+            <div class="box-item"><span class="box-qty">1×</span> Estação de Carregamento</div>
+            <div class="box-item"><span class="box-qty">2×</span> Esponja de Filtro</div>
+            <div class="box-item"><span class="box-qty">1×</span> Vassoura Principal (escova central)</div>
+            <div class="box-item"><span class="box-qty">2×</span> Filtro</div>
+            <div class="box-item"><span class="box-qty">4×</span> Escova Lateral</div>
+            <div class="box-item"><span class="box-qty">2×</span> Sacos para Poeira</div>
+            <div class="box-item"><span class="box-qty">4×</span> Pano de Esfregão Lavável</div>
+            <div class="box-item"><span class="box-qty">1×</span> Escova de Limpeza de Filtro</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 5: ELEMENTOS OBRIGATÓRIOS -->
+    <div class="section">
+      <div class="sec-title">Elementos Obrigatórios — Checklist</div>
+      <div class="card">
+        <div class="card-header">Status de cada elemento na embalagem</div>
+        <div class="card-body">
+          <div class="checklist">
+
+            <div class="citem">
+              <div class="citem-check ok"></div>
+              <span>Logo Velds <span class="citem-ok">OK</span></span>
+            </div>
+
+            <div class="citem">
+              <div class="citem-check ok"></div>
+              <span>Nome do produto: <strong>Robô Aspirador Inteligente Velds V50 PRO</strong> <span class="citem-ok">OK</span></span>
+            </div>
+
+            <div class="citem">
+              <div class="citem-check ok"></div>
+              <span>Tagline: <em>"Sua casa limpa por semanas. Você livre todos os dias."</em> <span class="citem-ok">OK</span></span>
+            </div>
+
+            <div class="citem">
+              <div class="citem-check ok"></div>
+              <span>EAN 7908856800733 (GTIN-13) — código de barras <span class="citem-ok">OK</span></span>
+            </div>
+
+            <div class="citem">
+              <div class="citem-check ok"></div>
+              <span>Origem: China <span class="citem-ok">OK</span></span>
+            </div>
+
+            <div class="citem">
+              <div class="citem-check ok"></div>
+              <span>Importado por: Velds Casa Inteligente LTDA — CNPJ 54.007.750/0001-14 — Rua José Neoli Cruz, 5000, Lote 33, Quadra A — Cond ABC Business Park — Porto Belo/SC — CEP 88210-000 <span class="citem-ok">OK</span></span>
+            </div>
+
+            <div class="citem">
+              <div class="citem-check ok"></div>
+              <span>Prazo de Validade: Indeterminado <span class="citem-ok">OK</span></span>
+            </div>
+
+            <div class="citem">
+              <div class="citem-check ok"></div>
+              <span>Composição: Plástico, metal e componentes eletrônicos <span class="citem-ok">OK</span></span>
+            </div>
+
+            <div class="citem">
+              <div class="citem-check ok"></div>
+              <span>Logos App Store e Google Play <span class="citem-ok">OK</span></span>
+            </div>
+
+            <div class="citem">
+              <div class="citem-check ok"></div>
+              <span>QR Code do APP <span class="citem-ok">OK</span></span>
+            </div>
+
+            <div class="citem">
+              <div class="citem-check ok"></div>
+              <span>QR Code da Página do Produto <span class="citem-ok">OK</span></span>
+            </div>
+
+            <div class="citem">
+              <div class="citem-check ok"></div>
+              <span>velds.com.br/suporte <span class="citem-ok">OK</span></span>
+            </div>
+
+            <div class="citem">
+              <div class="citem-check ok"></div>
+              <span>Ilustração do robô: ambientação sala de estar <span class="citem-ok">OK</span></span>
+            </div>
+
+            <div class="citem">
+              <div class="citem-check ok"></div>
+              <span>Imagens meramente ilustrativas (legenda obrigatória) <span class="citem-ok">OK</span></span>
+            </div>
+
+            <div class="citem">
+              <div class="citem-check pend"></div>
+              <span>Espaço para etiqueta do produto (aplicada na fábrica) <span class="citem-tag">PENDENTE</span></span>
+            </div>
+
+            <div class="citem">
+              <div class="citem-check pend"></div>
+              <span>Espaço para etiqueta de aviso de risco inflamável <span class="citem-tag">PENDENTE</span></span>
+            </div>
+
+            <div class="citem">
+              <div class="citem-check pend"></div>
+              <span>Selo do INMETRO — certificação em andamento <span class="citem-tag">PENDENTE</span></span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 6: DADOS LEGAIS -->
+    <div class="section">
+      <div class="sec-title">Dados Legais para Impressão na Embalagem</div>
+      <div class="card">
+        <div class="card-body" style="padding:0;">
+          <dl class="legais-grid">
+            <div class="legais-item">
+              <dt>Importado por</dt>
+              <dd>Velds Casa Inteligente LTDA</dd>
+            </div>
+            <div class="legais-item">
+              <dt>CNPJ</dt>
+              <dd>54.007.750/0001-14</dd>
+            </div>
+            <div class="legais-item" style="grid-column: 1 / -1; border-right: none;">
+              <dt>Endereço</dt>
+              <dd>Rua José Neoli Cruz, 5000, Lote 33, Quadra A — Cond ABC Business Park — Porto Belo/SC — CEP 88210-000</dd>
+            </div>
+            <div class="legais-item">
+              <dt>País de Origem</dt>
+              <dd>China</dd>
+            </div>
+            <div class="legais-item">
+              <dt>Prazo de Validade</dt>
+              <dd>Indeterminado</dd>
+            </div>
+            <div class="legais-item">
+              <dt>Composição</dt>
+              <dd>Plástico, metal e componentes eletrônicos</dd>
+            </div>
+            <div class="legais-item">
+              <dt>EAN / GTIN-13</dt>
+              <dd>7908856800733</dd>
+            </div>
+            <div class="legais-item" style="grid-column: 1 / -1; border-right: none; border-bottom: none;">
+              <dt>Aviso obrigatório</dt>
+              <dd><em>"Imagens meramente ilustrativas."</em></dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 7: PENDÊNCIAS -->
+    <div class="section">
+      <div class="sec-title">Pendências</div>
+      <div class="note-box">
+        <strong>Itens pendentes — aprovação condicionada</strong>
+        <ul>
+          <li><span>Certificação INMETRO: em andamento — posição do selo a confirmar com arte-final</span></li>
+          <li><span>Etiqueta de flamabilidade: posição a confirmar com a gráfica</span></li>
+          <li><span>QR Codes: gerar para velds.com.br/v50pro e para a página do produto</span></li>
+          <li><span>Arte-final: confirmar resolução mínima de imagens hero e ambientações (300 dpi)</span></li>
+          <li><span>Homologação ANATEL: confirmar necessidade (produto possui Wi-Fi integrado)</span></li>
+        </ul>
+      </div>
+    </div>
+
+  </div><!-- /body -->
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <span>© 2026 Velds Casa Inteligente LTDA · Documento interno</span>
+    <span>BRIEFING-GB-V50PRO · Rev 01 · Jan/2026</span>
+  </div>
+
+</div><!-- /page -->
+
+</body>
+</html>

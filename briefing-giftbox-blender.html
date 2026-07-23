@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Briefing Embalagem — Liquidificador Portátil Velds</title>
+<meta name="description" content="Briefing completo de embalagem giftbox para o Liquidificador Portátil Velds (RPBB-8301) — conceito visual, faces, specs e dados legais.">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #0C1628;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+  padding: 40px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ── PAGE SHELL ──────────────────────────────────────────────── */
+.page {
+  background: #fff;
+  width: 794px;
+  box-shadow: 0 8px 40px rgba(0,0,0,.5);
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+/* ── PAGE HEADER ─────────────────────────────────────────────── */
+.ph {
+  background: #0C1628;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ph-brand { font-size: 15px; font-weight: 800; letter-spacing: .14em; color: #fff; }
+.ph-label { font-size: 9px; letter-spacing: .2em; text-transform: uppercase; color: #475569; margin-top: 2px; }
+.ph-right { text-align: right; font-size: 10px; color: #475569; }
+.ph-right strong { color: #94A3B8; display: block; }
+
+/* ── ACCENT STRIP ────────────────────────────────────────────── */
+.accent-strip { height: 3px; background: linear-gradient(90deg, #3B6FE0, #7C3AED); }
+
+/* ── INTRO BAND ──────────────────────────────────────────────── */
+.intro-band {
+  background: #0F1F3D;
+  padding: 24px 32px;
+}
+.intro-band-label {
+  font-size: 10px; font-weight: 800; letter-spacing: .2em;
+  text-transform: uppercase; color: #3B6FE0; margin-bottom: 6px;
+}
+.intro-band-name {
+  font-size: 26px; font-weight: 900; color: #F1F5F9; line-height: 1.1;
+}
+.intro-band-tagline {
+  font-size: 12px; color: #94A3B8; margin-top: 8px; font-style: italic;
+}
+.intro-band-chips {
+  display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap;
+}
+.ichip {
+  font-size: 9px; font-weight: 700; letter-spacing: .06em;
+  background: rgba(59,111,224,.15); color: #93C5FD;
+  border: 1px solid rgba(59,111,224,.3);
+  border-radius: 20px; padding: 3px 10px;
+}
+.ichip-warn {
+  background: rgba(249,115,22,.18); color: #FCD34D;
+  border-color: rgba(249,115,22,.5);
+}
+
+/* ── BODY ────────────────────────────────────────────────────── */
+.body {
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ── SECTION TITLE ───────────────────────────────────────────── */
+.sec-title {
+  font-size: 8px; font-weight: 800; letter-spacing: .22em;
+  text-transform: uppercase; color: #3B6FE0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #E2E8F0;
+  margin-bottom: 14px;
+}
+
+/* ── CARD ────────────────────────────────────────────────────── */
+.card { border: 1px solid #E2E8F0; border-radius: 8px; overflow: hidden; }
+.card-header {
+  background: #F8FAFC; padding: 10px 16px;
+  border-bottom: 1px solid #E2E8F0;
+  font-size: 10px; font-weight: 700; color: #334155;
+  letter-spacing: .06em; text-transform: uppercase;
+}
+.card-body { padding: 14px 16px; }
+
+/* ── FACES GRID ──────────────────────────────────────────────── */
+.faces-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.face-card { border: 1px solid #E2E8F0; border-radius: 6px; overflow: hidden; }
+.face-label {
+  background: #1D4ED8; color: #fff;
+  font-size: 9px; font-weight: 800; letter-spacing: .12em;
+  text-transform: uppercase; padding: 6px 12px;
+}
+.face-label.lateral  { background: #4338CA; }
+.face-label.topo-base { background: #6D28D9; }
+.face-content {
+  padding: 10px 12px; font-size: 10px; color: #334155; line-height: 1.7;
+}
+.face-content ul { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+.face-content ul li { display: flex; gap: 6px; }
+.face-content ul li::before { content: '—'; color: #3B6FE0; flex-shrink: 0; }
+
+/* ── VTABLE ──────────────────────────────────────────────────── */
+.vtable-wrap { overflow-x: auto; border-radius: 8px; border: 1px solid #E2E8F0; }
+.vtable {
+  width: 100%; border-collapse: collapse;
+  font-size: 10.5px;
+}
+.vtable th {
+  background: #EFF6FF; color: #1D4ED8;
+  font-size: 9px; font-weight: 700; letter-spacing: .08em;
+  text-transform: uppercase; padding: 8px 12px;
+  text-align: left; border-bottom: 2px solid #BFDBFE;
+}
+.vtable td {
+  padding: 8px 12px; color: #334155;
+  border-bottom: 1px solid #F1F5F9; vertical-align: top;
+}
+.vtable tr:last-child td { border-bottom: none; }
+.vtable .val { font-weight: 700; color: #0F172A; font-variant-numeric: tabular-nums; }
+.vtable tr:nth-child(even) td { background: #F8FAFC; }
+
+/* ── WARN BOX (critical) ─────────────────────────────────────── */
+.warn-box {
+  background: #FFF7ED;
+  border: 1px solid #FDBA74;
+  border-left: 4px solid #F97316;
+  border-radius: 0 6px 6px 0;
+  padding: 12px 14px;
+}
+.warn-box-title {
+  font-size: 8px; font-weight: 800; letter-spacing: .16em;
+  text-transform: uppercase; color: #9A3412; margin-bottom: 6px;
+}
+.warn-box p { font-size: 10px; color: #7C2D12; line-height: 1.6; }
+
+/* ── UN3481 CRITICAL BAND ────────────────────────────────────── */
+.un-band {
+  background: #1C0A00;
+  border: 1px solid #7C2D12;
+  border-left: 5px solid #F97316;
+  border-radius: 0 6px 6px 0;
+  padding: 14px 18px;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+.un-hazmat {
+  flex-shrink: 0;
+  width: 48px; height: 48px;
+  border-radius: 4px;
+  background: #F97316;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(45deg);
+  margin: 6px;
+}
+.un-hazmat-inner {
+  transform: rotate(-45deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+}
+.un-hazmat-icon { font-size: 18px; line-height: 1; }
+.un-hazmat-code { font-size: 7px; font-weight: 900; color: #fff; letter-spacing: .05em; }
+.un-text-col { display: flex; flex-direction: column; gap: 4px; }
+.un-badge {
+  display: inline-block;
+  font-size: 8px; font-weight: 900; letter-spacing: .18em;
+  text-transform: uppercase; color: #F97316;
+  background: rgba(249,115,22,.12);
+  border: 1px solid rgba(249,115,22,.4);
+  border-radius: 3px;
+  padding: 2px 8px;
+  width: fit-content;
+}
+.un-title {
+  font-size: 13px; font-weight: 800; color: #FBBF24; line-height: 1.2;
+  margin-top: 2px;
+}
+.un-desc {
+  font-size: 10px; color: #FCA87C; line-height: 1.55; margin-top: 2px;
+}
+.un-desc strong { color: #FBBF24; }
+
+/* ── NOTE BOX ────────────────────────────────────────────────── */
+.note-box {
+  background: #FFFBEB;
+  border: 1px solid #FDE68A;
+  border-left: 4px solid #F59E0B;
+  border-radius: 0 6px 6px 0;
+  padding: 12px 14px;
+}
+.note-box-title {
+  font-size: 8px; font-weight: 800; letter-spacing: .16em;
+  text-transform: uppercase; color: #B45309; margin-bottom: 8px;
+}
+.note-box ul { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+.note-box ul li {
+  font-size: 10px; color: #78350F;
+  display: flex; gap: 8px; line-height: 1.5;
+}
+.note-box ul li::before { content: '•'; color: #F59E0B; flex-shrink: 0; }
+
+/* ── CHECKLIST ───────────────────────────────────────────────── */
+.checklist { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.checklist li {
+  font-size: 10.5px; color: #334155; line-height: 1.5;
+  display: flex; align-items: flex-start; gap: 10px;
+}
+.cl-box {
+  flex-shrink: 0;
+  width: 14px; height: 14px;
+  border: 1.5px solid #CBD5E1;
+  border-radius: 3px;
+  background: #F8FAFC;
+  margin-top: 1px;
+  display: flex; align-items: center; justify-content: center;
+}
+.cl-box.ok { background: #EFF6FF; border-color: #3B6FE0; }
+.cl-box.ok::after { content: '✓'; font-size: 9px; color: #3B6FE0; font-weight: 800; }
+.cl-box.crit { background: #FFF7ED; border-color: #F97316; }
+.cl-box.crit::after { content: '!'; font-size: 9px; color: #F97316; font-weight: 900; }
+.checklist li .cl-label { flex: 1; }
+.checklist li .cl-label .tag {
+  display: inline-block;
+  font-size: 8px; font-weight: 700; letter-spacing: .06em;
+  border-radius: 3px; padding: 1px 6px; margin-left: 6px;
+  vertical-align: middle;
+}
+.tag-req { background: #FFF7ED; color: #9A3412; border: 1px solid #FDBA74; }
+.tag-ok  { background: #EFF6FF; color: #1D4ED8; border: 1px solid #BFDBFE; }
+.tag-no  { background: #F1F5F9; color: #64748B; border: 1px solid #E2E8F0; }
+.tag-tbd { background: #FFFBEB; color: #B45309; border: 1px solid #FDE68A; }
+
+/* ── COLORS GRID ─────────────────────────────────────────────── */
+.colors-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.color-swatch {
+  border-radius: 6px; padding: 14px 10px 12px;
+  text-align: center; border: 1px solid #E2E8F0;
+  display: flex; flex-direction: column; align-items: center; gap: 0;
+}
+.sw-dot {
+  width: 36px; height: 36px; border-radius: 50%;
+  border: 2px solid rgba(0,0,0,.08);
+  margin-bottom: 8px;
+}
+.sw-name { font-size: 10px; font-weight: 700; color: #334155; }
+.sw-hex  { font-size: 8.5px; color: #94A3B8; margin-top: 2px; font-variant-numeric: tabular-nums; }
+.sw-ean  { font-size: 8px; color: #CBD5E1; margin-top: 4px; font-style: italic; }
+
+/* ── BOX IN BOX ──────────────────────────────────────────────── */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+/* ── LEGAIS GRID ─────────────────────────────────────────────── */
+.legais-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+.legais-item {
+  padding: 8px 12px;
+  border-bottom: 1px solid #F1F5F9;
+  font-size: 10px; color: #334155; line-height: 1.55;
+}
+.legais-item:nth-child(odd) { border-right: 1px solid #F1F5F9; }
+.legais-item dt { font-size: 8.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #94A3B8; margin-bottom: 2px; }
+.legais-item dd { color: #0F172A; }
+
+/* ── CONTEUDO CAIXA ──────────────────────────────────────────── */
+.box-contents { display: flex; flex-direction: column; gap: 5px; }
+.box-item {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 10.5px; color: #334155; padding: 5px 0;
+  border-bottom: 1px solid #F1F5F9;
+}
+.box-item:last-child { border-bottom: none; }
+.box-qty {
+  flex-shrink: 0;
+  font-size: 9px; font-weight: 800;
+  background: #EFF6FF; color: #1D4ED8;
+  border: 1px solid #BFDBFE;
+  border-radius: 4px;
+  padding: 2px 7px;
+  font-variant-numeric: tabular-nums;
+  min-width: 28px; text-align: center;
+}
+.box-qty.opt {
+  background: #F8FAFC; color: #94A3B8; border-color: #E2E8F0;
+}
+
+/* ── EMBALAGEM DETAIL ────────────────────────────────────────── */
+.emb-split { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+/* ── FOOTER ──────────────────────────────────────────────────── */
+.pf {
+  padding: 11px 32px;
+  border-top: 1px solid #F1F5F9;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.pf-path { font-size: 8px; color: #CBD5E1; }
+.pf-num  { font-size: 8px; color: #CBD5E1; font-weight: 700; }
+
+/* ── INMETRO CALLOUT ─────────────────────────────────────────── */
+.inmetro-row {
+  display: flex; gap: 10px; align-items: center;
+  background: #F0F9FF; border: 1px solid #BAE6FD;
+  border-radius: 6px; padding: 8px 12px;
+}
+.inmetro-badge {
+  flex-shrink: 0;
+  font-size: 9px; font-weight: 900; letter-spacing: .08em;
+  background: #0369A1; color: #fff;
+  border-radius: 4px; padding: 3px 8px;
+}
+.inmetro-text { font-size: 10px; color: #0C4A6E; line-height: 1.5; }
+
+/* ── RATING LABEL PLACEHOLDER ────────────────────────────────── */
+.rating-placeholder {
+  width: 44mm; min-height: 44mm;
+  border: 1.5px dashed #CBD5E1;
+  border-radius: 4px;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 4px;
+  background: #F8FAFC;
+  flex-shrink: 0;
+}
+.rating-placeholder-label {
+  font-size: 8px; font-weight: 700; letter-spacing: .1em;
+  text-transform: uppercase; color: #94A3B8; text-align: center;
+  padding: 0 6px;
+}
+.rating-placeholder-dim {
+  font-size: 9px; font-weight: 800; color: #CBD5E1;
+}
+
+/* ── section spacer for visual breathing ────────────────────── */
+.section { display: flex; flex-direction: column; }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ── PAGE HEADER ──────────────────────────────────────────── -->
+  <div class="ph">
+    <div>
+      <div class="ph-brand">VELDS</div>
+      <div class="ph-label">Briefing de Embalagem — Giftbox Individual</div>
+    </div>
+    <div class="ph-right">
+      <strong>REV. 00 — RASCUNHO</strong>
+      Área: Produto / Embalagem<br>
+      Data: Julho 2026
+    </div>
+  </div>
+
+  <div class="accent-strip"></div>
+
+  <!-- ── INTRO BAND ────────────────────────────────────────────── -->
+  <div class="intro-band">
+    <div class="intro-band-label">Linha Velds Eletro — Cozinha e Bem-Estar</div>
+    <div class="intro-band-name">Liquidificador Portátil Velds</div>
+    <div class="intro-band-tagline">"Seu smoothie, em qualquer lugar. Sem fio, sem limites."</div>
+    <div class="intro-band-chips">
+      <span class="ichip">180W</span>
+      <span class="ichip">18.000 RPM</span>
+      <span class="ichip">USB-C</span>
+      <span class="ichip">28 usos/carga</span>
+      <span class="ichip">3 Programas</span>
+      <span class="ichip">600ml</span>
+      <span class="ichip">6 Lâminas Inox</span>
+      <span class="ichip-warn">⚠ UN3481 — Bateria Íon-Lítio</span>
+    </div>
+  </div>
+
+  <!-- ── BODY ─────────────────────────────────────────────────── -->
+  <div class="body">
+
+    <!-- ── UN3481 CRITICAL WARNING ──────────────────────────────── -->
+    <div class="section">
+      <div class="un-band">
+        <div style="flex-shrink:0; display:flex; align-items:center; justify-content:center; width:68px;">
+          <div class="un-hazmat">
+            <div class="un-hazmat-inner">
+              <span class="un-hazmat-icon">🔥</span>
+              <span class="un-hazmat-code">UN3481</span>
+            </div>
+          </div>
+        </div>
+        <div class="un-text-col">
+          <span class="un-badge">⚠ ELEMENTO CRÍTICO OBRIGATÓRIO</span>
+          <div class="un-title">Etiqueta de Risco — Bateria de Íon-Lítio (UN3481)</div>
+          <div class="un-desc">
+            O produto contém bateria de <strong>íon-lítio (11,1V / 2.000mAh / 22,2Wh)</strong> integrada à base.
+            A etiqueta de risco <strong>UN3481</strong> (líquidos/sólidos de lítio contidos em equipamento)
+            é <strong>obrigatória na face lateral</strong> da embalagem, conforme regulamentação de transporte
+            de mercadorias perigosas (IATA/ICAO/IMO). Sem esta etiqueta a carga não pode ser embarcada.
+            <br><br>
+            <strong>Arte ainda não recebida — pendência crítica.</strong>
+            Bloqueia aprovação final da arte da embalagem.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── CONCEITO VISUAL / FACES ──────────────────────────────── -->
+    <div class="section">
+      <div class="sec-title">Conceito Visual — Mapeamento de Faces</div>
+      <div class="faces-grid">
+
+        <div class="face-card">
+          <div class="face-label">Frente (Principal)</div>
+          <div class="face-content">
+            <ul>
+              <li>Foto hero do produto (ângulo 3/4 ou frontal)</li>
+              <li>Logotipo Velds (posição superior esquerda)</li>
+              <li>Nome: <strong>Liquidificador Portátil Velds</strong></li>
+              <li>Tagline: "Sem fio, sem limites."</li>
+              <li>Cor de fundo: preto com identidade Velds (padrão V50)</li>
+              <li>Chip de destaque: 180W · 18.000 RPM · USB-C</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="face-card">
+          <div class="face-label">Verso</div>
+          <div class="face-content">
+            <ul>
+              <li>Foto lifestyle (uso em contexto — academia, cozinha, viagem)</li>
+              <li>Grid de 6 features com ícone + texto curto</li>
+              <li>Coluna lateral direita: specs técnicas resumidas</li>
+              <li>Dados legais (importador, CNPJ, endereço, origem)</li>
+              <li>Selos: INMETRO + "imagens ilustrativas"</li>
+              <li>URL: <strong>velds.com.br/suporte</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="face-card">
+          <div class="face-label lateral">Lateral (1 de 2)</div>
+          <div class="face-content">
+            <ul>
+              <li>Ícones de manuseio (frágil, não empilhar, etc.)</li>
+              <li>Ícone de reciclagem</li>
+              <li><strong>Etiqueta UN3481</strong> — risco bateria íon-lítio <span class="tag tag-req">OBRIGATÓRIA</span></li>
+              <li>Código de barras EAN-13 <span class="tag tag-tbd">A PREENCHER</span></li>
+              <li>Dados do importador</li>
+              <li>Espaço para rating label 44×44mm <span class="tag tag-tbd">ARTE A PREENCHER</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="face-card">
+          <div class="face-label lateral">Lateral (2 de 2)</div>
+          <div class="face-content">
+            <ul>
+              <li>QR Code — página do produto <span class="tag tag-tbd">URL A CONFIRMAR</span></li>
+              <li>Conteúdo da caixa (lista de itens)</li>
+              <li>Especificações técnicas resumidas</li>
+              <li>País de origem: China</li>
+              <li>Prazo de validade: indeterminado</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="face-card">
+          <div class="face-label topo-base">Topo</div>
+          <div class="face-content">
+            <ul>
+              <li>Aba com identidade Velds</li>
+              <li>Logotipo reduzido</li>
+              <li>Nome do produto compacto</li>
+              <li>Cor de referência do SKU (Azul / Cinza / Branco / Rosa)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="face-card">
+          <div class="face-label topo-base">Base</div>
+          <div class="face-content">
+            <ul>
+              <li>Aba com identidade Velds</li>
+              <li>Código de lote / data de fabricação (área reservada)</li>
+              <li>EAN-13 adicional <span class="tag tag-tbd">A PREENCHER</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── FEATURES PARA EMBALAGEM ───────────────────────────────── -->
+    <div class="section">
+      <div class="sec-title">Features para Comunicação na Embalagem</div>
+      <div class="card">
+        <div class="card-header">Copy Points — Frente e Verso</div>
+        <div class="card-body">
+          <table class="vtable" style="border:none;">
+            <thead>
+              <tr>
+                <th style="width:36%;">Feature</th>
+                <th>Descrição para embalagem</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="val">Potência real sem fio</td>
+                <td>Motor de 180W e 18.000 RPM com sistema de 6 lâminas em aço inox</td>
+              </tr>
+              <tr>
+                <td class="val">3 Programas Inteligentes</td>
+                <td>Blend, Smoothie e Crush — tritura até gelo no modo Crush</td>
+              </tr>
+              <tr>
+                <td class="val">Leve e Recarregável</td>
+                <td>Bateria de íon-lítio com carregamento USB-C e até 28 usos por carga</td>
+              </tr>
+              <tr>
+                <td class="val">Sistema de 6 Lâminas</td>
+                <td>Tornado / Nano Wing / Crush em aço inox</td>
+              </tr>
+              <tr>
+                <td class="val">Copo 600ml PCTG</td>
+                <td>470ml úteis · transparente · livre de BPA</td>
+              </tr>
+              <tr>
+                <td class="val">Limpeza Fácil</td>
+                <td>Base e copo se desconectam para higienização rápida</td>
+              </tr>
+              <tr>
+                <td class="val">Copo Inox Opcional</td>
+                <td>Parede dupla SUS304 com retenção térmica (acessório — SKU separado)</td>
+              </tr>
+              <tr>
+                <td class="val">Anel/Alça Magnética</td>
+                <td>Suporte para celular/tablet (acessório — SKU separado)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── CORES DISPONÍVEIS ──────────────────────────────────────── -->
+    <div class="section">
+      <div class="sec-title">Cores Disponíveis — 4 SKUs</div>
+      <p style="font-size:10px; color:#64748B; margin-bottom:12px; line-height:1.6;">Mesmo giftbox para todas as cores — diferenciam-se pelo SKU/EAN e pela cor impressa na embalagem. Confirmar paleta exata com fornecedor (Ritus/Rutal).</p>
+      <div class="colors-grid">
+        <div class="color-swatch">
+          <div class="sw-dot" style="background:#2563EB; box-shadow:0 2px 8px rgba(37,99,235,.35);"></div>
+          <div class="sw-name">Azul</div>
+          <div class="sw-hex">Cor referência</div>
+          <div class="sw-ean">EAN: A PREENCHER</div>
+        </div>
+        <div class="color-swatch">
+          <div class="sw-dot" style="background:#6B7280; box-shadow:0 2px 8px rgba(107,114,128,.25);"></div>
+          <div class="sw-name">Cinza</div>
+          <div class="sw-hex">Cor referência</div>
+          <div class="sw-ean">EAN: A PREENCHER</div>
+        </div>
+        <div class="color-swatch">
+          <div class="sw-dot" style="background:#F1F5F9; border: 1.5px solid #CBD5E1;"></div>
+          <div class="sw-name">Branco</div>
+          <div class="sw-hex">Cor referência</div>
+          <div class="sw-ean">EAN: A PREENCHER</div>
+        </div>
+        <div class="color-swatch">
+          <div class="sw-dot" style="background:#EC4899; box-shadow:0 2px 8px rgba(236,72,153,.3);"></div>
+          <div class="sw-name">Rosa</div>
+          <div class="sw-hex">Cor referência</div>
+          <div class="sw-ean">EAN: A PREENCHER</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── ELEMENTOS NA EMBALAGEM ────────────────────────────────── -->
+    <div class="section">
+      <div class="sec-title">Elementos na Embalagem — Checklist</div>
+      <div class="card">
+        <div class="card-header">Status de cada elemento</div>
+        <div class="card-body">
+          <ul class="checklist">
+            <li>
+              <div class="cl-box ok"></div>
+              <span class="cl-label">Logotipo Velds <span class="tag tag-ok">DISPONÍVEL</span></span>
+            </li>
+            <li>
+              <div class="cl-box ok"></div>
+              <span class="cl-label">Tagline do produto <span class="tag tag-ok">DEFINIDA</span></span>
+            </li>
+            <li>
+              <div class="cl-box ok"></div>
+              <span class="cl-label">Dados legais completos (importador, CNPJ, endereço, origem) <span class="tag tag-ok">CONFIRMADO</span></span>
+            </li>
+            <li>
+              <div class="cl-box ok"></div>
+              <span class="cl-label">Especificações técnicas do produto <span class="tag tag-ok">CONFIRMADO</span></span>
+            </li>
+            <li>
+              <div class="cl-box ok"></div>
+              <span class="cl-label">Conteúdo da caixa definido <span class="tag tag-ok">CONFIRMADO</span></span>
+            </li>
+            <li>
+              <div class="cl-box ok"></div>
+              <span class="cl-label">URL de suporte: velds.com.br/suporte <span class="tag tag-ok">CONFIRMADO</span></span>
+            </li>
+            <li>
+              <div class="cl-box crit"></div>
+              <span class="cl-label"><strong>Etiqueta de risco UN3481 — bateria íon-lítio</strong> <span class="tag tag-req">OBRIGATÓRIA — ARTE PENDENTE</span></span>
+            </li>
+            <li>
+              <div class="cl-box crit"></div>
+              <span class="cl-label">EAN/GTIN-13 — 1 por cor (4 EANs no total) <span class="tag tag-tbd">A GERAR</span></span>
+            </li>
+            <li>
+              <div class="cl-box crit"></div>
+              <span class="cl-label">Rating label 44×44mm <span class="tag tag-req">ARTE A PREENCHER</span></span>
+            </li>
+            <li>
+              <div class="cl-box crit"></div>
+              <span class="cl-label">Modelo definitivo Velds (nome/código SKU) <span class="tag tag-tbd">A DEFINIR</span></span>
+            </li>
+            <li>
+              <div class="cl-box"></div>
+              <span class="cl-label">Selo INMETRO <span class="tag tag-tbd">CONFIRMAR PROCESSO</span></span>
+            </li>
+            <li>
+              <div class="cl-box"></div>
+              <span class="cl-label">QR Code — página do produto <span class="tag tag-tbd">URL A CONFIRMAR</span></span>
+            </li>
+            <li>
+              <div class="cl-box"></div>
+              <span class="cl-label">Ícones de manuseio e reciclagem <span class="tag tag-tbd">A DEFINIR</span></span>
+            </li>
+          </ul>
+          <div style="margin-top:14px;">
+            <div class="inmetro-row">
+              <span class="inmetro-badge">INMETRO</span>
+              <span class="inmetro-text">Produto sujeito a certificação INMETRO. Confirmar portaria aplicável para liquidificadores portáteis com bateria embutida. Processo deve ser iniciado antes da aprovação final da arte.</span>
+            </div>
+          </div>
+          <div style="margin-top:10px;" class="warn-box">
+            <div class="warn-box-title">⚠ Sem conectividade — itens proibidos neste produto</div>
+            <p>Este produto NÃO possui conectividade wi-fi, Bluetooth ou app. Não incluir na embalagem: ícones de App Store ou Play Store, QR Code de aplicativo, ou selo ANATEL. A inclusão incorreta desses elementos implica infração regulatória.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── CONTEÚDO DA CAIXA ──────────────────────────────────────── -->
+    <div class="section">
+      <div class="sec-title">Conteúdo da Caixa</div>
+      <div class="two-col">
+        <div class="card">
+          <div class="card-header">Itens Inclusos (SKU padrão)</div>
+          <div class="card-body">
+            <div class="box-contents">
+              <div class="box-item"><span class="box-qty">1×</span> Liquidificador portátil (base motorizada)</div>
+              <div class="box-item"><span class="box-qty">1×</span> Copo PCTG 600ml com tampa e alça</div>
+              <div class="box-item"><span class="box-qty">1×</span> Cabo USB-C (40cm)</div>
+              <div class="box-item"><span class="box-qty">1×</span> Manual do usuário</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">Acessórios Opcionais (SKU separado)</div>
+          <div class="card-body">
+            <div class="box-contents">
+              <div class="box-item"><span class="box-qty opt">OPT</span> Copo aço inox SUS304 parede dupla — com tampa e alça</div>
+              <div class="box-item"><span class="box-qty opt">OPT</span> Anel / alça magnética (suporte para celular/tablet)</div>
+            </div>
+            <div style="margin-top:10px; font-size:9.5px; color:#94A3B8; line-height:1.5;">
+              Acessórios vendidos separadamente. Não mencionados no conteúdo padrão da caixa — confirmar se há referência cruzada no verso.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── RATING LABEL ───────────────────────────────────────────── -->
+    <div class="section">
+      <div class="sec-title">Rating Label — Etiqueta do Produto</div>
+      <div class="card">
+        <div class="card-body" style="display:flex; gap:16px; align-items:flex-start;">
+          <div class="rating-placeholder">
+            <div class="rating-placeholder-dim">44 × 44 mm</div>
+            <div class="rating-placeholder-label">Arte da etiqueta<br>a preencher</div>
+          </div>
+          <div style="flex:1; display:flex; flex-direction:column; gap:8px;">
+            <p style="font-size:10.5px; color:#334155; line-height:1.65;">
+              A etiqueta do produto (rating label) deve conter, no mínimo:
+            </p>
+            <ul class="checklist">
+              <li><div class="cl-box"></div><span class="cl-label">Modelo definitivo Velds <span class="tag tag-tbd">A DEFINIR</span></span></li>
+              <li><div class="cl-box ok"></div><span class="cl-label">Referência fabricante: RPBB-8301</span></li>
+              <li><div class="cl-box ok"></div><span class="cl-label">Tensão/corrente da bateria: 11,1V / 2.000mAh / 22,2Wh</span></li>
+              <li><div class="cl-box ok"></div><span class="cl-label">Entrada carregador: 5V DC, 2A–3A (via USB-C)</span></li>
+              <li><div class="cl-box ok"></div><span class="cl-label">Potência: 180W</span></li>
+              <li><div class="cl-box ok"></div><span class="cl-label">Importador: Velds Casa Inteligente LTDA · CNPJ 54.007.750/0001-14</span></li>
+              <li><div class="cl-box ok"></div><span class="cl-label">Origem: China</span></li>
+              <li><div class="cl-box"></div><span class="cl-label">Número INMETRO <span class="tag tag-tbd">AGUARDANDO PROCESSO</span></span></li>
+            </ul>
+            <p style="font-size:9.5px; color:#94A3B8; margin-top:4px;">Dimensão reservada na face lateral da embalagem: <strong>44 × 44 mm.</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── ESPECIFICAÇÕES TÉCNICAS ────────────────────────────────── -->
+    <div class="section">
+      <div class="sec-title">Especificações Técnicas</div>
+      <div class="vtable-wrap">
+        <table class="vtable">
+          <thead>
+            <tr>
+              <th style="width:38%;">Parâmetro</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Modelo fabricante</td><td class="val">RPBB-8301 (Ritus / Rutal E-Life)</td></tr>
+            <tr><td>Potência</td><td class="val">180W</td></tr>
+            <tr><td>Rotação do motor</td><td class="val">18.000 RPM (±10%)</td></tr>
+            <tr><td>Programas</td><td class="val">Blend / Smoothie / Crush — 3 modos automáticos</td></tr>
+            <tr><td>Lâminas</td><td class="val">6 lâminas em aço inox — sistema Upcross</td></tr>
+            <tr><td>Capacidade do copo</td><td class="val">600ml total · 470ml úteis</td></tr>
+            <tr><td>Material do copo</td><td class="val">PCTG transparente, livre de BPA (opcional: aço inox SUS304 parede dupla)</td></tr>
+            <tr><td>Material do corpo</td><td class="val">ABS</td></tr>
+            <tr><td>Bateria</td><td class="val">11,1V / 2.000mAh / 22,2Wh — 3× 18650 Li-ion</td></tr>
+            <tr><td>Carregamento</td><td class="val">USB-C · entrada 5V 2A/3A · aprox. 4h</td></tr>
+            <tr><td>Autonomia</td><td class="val">Até 28 usos por carga</td></tr>
+            <tr><td>Nível de ruído</td><td class="val">&lt; 75 dBA</td></tr>
+            <tr><td>Peso do conjunto</td><td class="val">885g (com copo transparente)</td></tr>
+            <tr><td>Dimensões</td><td class="val">D84 × 300mm (com copo)</td></tr>
+            <tr><td>Cores</td><td class="val">Azul · Cinza · Branco · Rosa</td></tr>
+            <tr><td>Certificações</td><td class="val">INMETRO + CB / CE / EMC / LFGB / RoHS / REACH / ErP / FDA / FCC</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ── DADOS DE EMBALAGEM ─────────────────────────────────────── -->
+    <div class="section">
+      <div class="sec-title">Dados de Embalagem</div>
+      <div class="emb-split">
+        <div class="card">
+          <div class="card-header">Giftbox Individual</div>
+          <div class="card-body">
+            <table class="vtable" style="border:none;">
+              <tbody>
+                <tr><td>Dimensões</td><td class="val">104 × 104 × 323mm</td></tr>
+                <tr><td>Peso bruto</td><td class="val">1,04 kg</td></tr>
+                <tr><td>Peso líquido</td><td class="val">0,911 kg</td></tr>
+                <tr><td>Material caixa</td><td class="val">300g gray card + A9</td></tr>
+                <tr><td>Impressão</td><td class="val">4 cores</td></tr>
+                <tr><td>Acabamento</td><td class="val">Fosco (matte)</td></tr>
+                <tr><td>Proteção interna</td><td class="val">EPE</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">Caixa Coletiva (Master)</div>
+          <div class="card-body">
+            <table class="vtable" style="border:none;">
+              <tbody>
+                <tr><td>Dimensões</td><td class="val">540 × 225 × 340mm</td></tr>
+                <tr><td>Giftboxes por caixa</td><td class="val">10 unidades</td></tr>
+                <tr><td>Peso bruto (master)</td><td class="val">11,1 kg</td></tr>
+                <tr><td>Tipo de onda</td><td class="val">Onda B=B</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── DADOS LEGAIS ───────────────────────────────────────────── -->
+    <div class="section">
+      <div class="sec-title">Dados Legais para Embalagem</div>
+      <div class="card">
+        <div class="card-body" style="padding:0;">
+          <dl class="legais-grid">
+            <div class="legais-item">
+              <dt>Importado por</dt>
+              <dd>Velds Casa Inteligente LTDA</dd>
+            </div>
+            <div class="legais-item">
+              <dt>CNPJ</dt>
+              <dd>54.007.750/0001-14</dd>
+            </div>
+            <div class="legais-item" style="grid-column: 1 / -1; border-right: none;">
+              <dt>Endereço</dt>
+              <dd>Rua José Neoli Cruz, 5000, Lote 33 Quadra A — Cond. ABC Business Park — Porto Belo/SC — CEP 88210-000</dd>
+            </div>
+            <div class="legais-item">
+              <dt>País de origem</dt>
+              <dd>China</dd>
+            </div>
+            <div class="legais-item">
+              <dt>Prazo de validade</dt>
+              <dd>Indeterminado</dd>
+            </div>
+            <div class="legais-item" style="grid-column: 1 / -1; border-right: none; border-bottom: none;">
+              <dt>Composição</dt>
+              <dd>Plástico (ABS/PCTG), aço inox (SUS304) e componentes eletrônicos, com bateria de íon-lítio</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+      <div style="margin-top: 8px; font-size: 9.5px; color: #94A3B8; padding-left: 4px;">
+        Texto obrigatório na embalagem: <em>"Imagens ilustrativas."</em>
+      </div>
+    </div>
+
+    <!-- ── PENDÊNCIAS ─────────────────────────────────────────────── -->
+    <div class="section">
+      <div class="sec-title">Pendências — Aprovação Bloqueada</div>
+      <div class="note-box">
+        <div class="note-box-title">Itens pendentes para aprovação final da arte</div>
+        <ul>
+          <li>Modelo definitivo Velds a definir (nome/código do SKU para impressão)</li>
+          <li>EAN/GTIN-13 — um por cor (4 EANs): Azul · Cinza · Branco · Rosa</li>
+          <li>Arte da etiqueta de risco UN3481 (bateria íon-lítio) — <strong>crítico, bloqueia embarque</strong></li>
+          <li>Arte do rating label 44×44mm com todos os dados elétricos e de importação</li>
+          <li>Confirmar nomenclatura definitiva da linha Eletro</li>
+          <li>Confirmar especificação técnica e embalagem dos acessórios opcionais (SKU separado?)</li>
+          <li>Confirmar número e portaria INMETRO aplicável ao produto</li>
+          <li>Confirmar URL da página do produto para QR Code</li>
+          <li>Definir paleta de cor exata por SKU junto ao fornecedor Ritus/Rutal</li>
+        </ul>
+      </div>
+    </div>
+
+  </div><!-- /body -->
+
+  <!-- ── FOOTER ─────────────────────────────────────────────────── -->
+  <div class="pf">
+    <span class="pf-path">Briefings_Embalagem / briefing-giftbox-blender.html — REV 00 · Julho 2026 · Uso interno Velds</span>
+    <span class="pf-num">Pág. 1</span>
+  </div>
+
+</div><!-- /page -->
+
+</body>
+</html>
